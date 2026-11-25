@@ -1,0 +1,24 @@
+name: Task
+description: A concrete piece of work, technical debt or follow-up
+labels: ["tech-debt"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What needs to be done and why.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      placeholder: |
+        - [ ] ...
+        - [ ] Tests pass
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Related issues, specs or pull requests
